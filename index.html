@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<head>
+		<title> Jump Challenge</title>
+		<script type="text/javascript">
+            function jump(){
+                textL = document.getElementById("left").value;
+                textR = document.getElementById("right").value;
+                buttonTxt = document.getElementById("right").value;
+                if (textR == "")
+                {
+                    newBTxt = "<JUMP" 
+                }
+                if (textL == "")
+                {
+                    newBTxt = "JUMP>" 
+                }
+               
+                document.getElementById("newTxt").innerHTML = "<input type 'text' id='left' name='left' value=" + textR + "><input type='button' id='button' name='button' onclick='jump()' value = " + newBTxt + "><input type 'text' id='right' name='right' value="+textL+">"
+            }
+        </script>
+	</head>
+	<body>
+		<header>	
+		</header>
+		<br>
+		<form>
+            <div id="newTxt", name="newTxt">
+                <input type 'text' id='left' name='left' value="">
+                <input type="button" id="button" onclick="jump()" value = "JUMP>">
+                <input type 'text' id='right' name='right' value="">
+            </div>
+        </form>
+    </body>	
+</html>
